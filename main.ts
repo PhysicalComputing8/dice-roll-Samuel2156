@@ -3,4 +3,4 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(roll)
 })
 let roll = 0
-basic.showString("Shake to roll the dice")
+basic.showString("Shake")
