@@ -1,3 +1,9 @@
+input.onButtonPressed(Button.A, function () {
+	
+})
+input.onButtonPressed(Button.B, function () {
+	
+})
 input.onGesture(Gesture.Shake, function () {
     roll = randint(1, 6)
     // This is cool. So you will show the Arabic numeral before displaying the dots. Was this on purpose?
@@ -57,6 +63,12 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             `)
     }
+})
+radio.onReceivedValue(function (name, value) {
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    led.setBrightness(255)
+    radio.setTransmitPower(7)
+    music.ringTone(262)
 })
 let roll = 0
 basic.showString("Shake")
