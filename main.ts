@@ -1,8 +1,15 @@
 input.onButtonPressed(Button.A, function () {
-	
+    if (true) {
+        let Player_B = 0
+        while (Player_A && Player_B) {
+        	
+        }
+    }
 })
 input.onButtonPressed(Button.B, function () {
-	
+    if (Player_A) {
+    	
+    }
 })
 input.onGesture(Gesture.Shake, function () {
     roll = randint(1, 6)
@@ -71,4 +78,5 @@ radio.onReceivedValue(function (name, value) {
     music.ringTone(262)
 })
 let roll = 0
+let Player_A = 0
 basic.showString("Shake")
